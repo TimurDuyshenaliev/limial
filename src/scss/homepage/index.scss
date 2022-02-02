@@ -1,3 +1,19 @@
+h2{
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: 1.25;
+}
+h3{
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 1.5;
+}
+p{
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+// ----------- HERO ---------- //
 .hero{
     height: 100vh;
     background-image: url("/images/main_background.jpeg");
@@ -25,8 +41,6 @@ header{
     color: #FFFFFF;
     text-decoration: none;
 }
-
-
 .header-bottom{
     display: flex;
     justify-content: space-between;
@@ -63,11 +77,9 @@ header{
     width: 100px;
     color: #1B56C5;
 }
-
 .main{
     display:inline-flex;
     margin-top: 85px;
-
 }
 .text__h1{
     font-weight: bold;
@@ -91,3 +103,34 @@ header{
 .main__img > img{
     width: 646px;
 }
+// ----------- OPTIONS ---------- //
+.options{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 110px;
+}
+.list-of-options{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.list-of-options__item{
+    width: 255px;
+    height: 200px;
+    text-align: center;
+    padding-top: 30px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+.list-of-options__content{
+    padding-top: 20px;
+}
+.list-of-options__content__item{
+    padding-bottom: 10px;
+}
+.options-img{
+    width: 70px;
+}
+// ----------- SECURITY ---------- //
