@@ -2,11 +2,13 @@ h2{
     font-weight: bold;
     font-size: 2.5rem;
     line-height: 1.25;
+    padding-bottom: 15px;
 }
 h3{
     font-weight: normal;
     font-size: 2rem;
     line-height: 1.5;
+    padding-bottom: 15px;
 }
 p{
     font-weight: normal;
@@ -134,3 +136,33 @@ header{
     width: 70px;
 }
 // ----------- SECURITY ---------- //
+.security{
+    background-image: url('/images/main_background.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+.security__content{
+    display: inline-flex;
+    justify-content: space-between;
+    padding-top: 120px;
+    padding-bottom: 160px;
+}
+.content-text{
+    width: 530px;
+    color: white;
+    padding-right: 50px;
+}
+.security-list{
+    padding-top: 25px;
+}
+.list__item{
+    display: inline-flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.checkout{
+    margin-right: 10px;
+}
+.security-img > img{
+    width: 500px;
+}
