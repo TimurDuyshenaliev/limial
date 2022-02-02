@@ -23,6 +23,7 @@ header{
 }
 .top--list__item{
     color: #FFFFFF;
+    text-decoration: none;
 }
 
 
@@ -46,7 +47,22 @@ header{
     line-height: 1.5;
     color: white;
 }
-
+.rg{
+    height: 35px;
+    background-color:rgba(0,0,0,0);
+    color: white;
+    margin-right: 10px;
+    border: 1px solid white;
+}
+.rg:hover{
+    background-color: white;
+    color: #1B56C5;
+}
+.lg{
+    height: 35px;
+    width: 100px;
+    color: #1B56C5;
+}
 
 .main{
     display:inline-flex;
@@ -59,7 +75,7 @@ header{
     line-height: 1.35;
     margin-bottom: 20px;
     color: white;
-    
+    padding-top: 30px;
 }
 .text__h2{
     font-weight: normal;
@@ -70,6 +86,7 @@ header{
 }
 .more {
     width: 180px;
+    color: #1B56C5;
 }
 .main__img > img{
     width: 646px;
