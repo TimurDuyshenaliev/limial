@@ -33,10 +33,10 @@
                 </li>
             </nav>
             <div class="header-bottom">
-                <div class="header-bottom__logo">
-                    <img class="logo__img" src="images/Cloud.svg" alt="cloud">
-                    <p class="logo__text">Limial</p>
-                </div>
+                <a class="logo" href="index.html">
+                    <img src="images/Cloud.svg" alt="logo">
+                    <p>Limial</p>
+                </a>
                 <div class="reg&log">
                     <button class="btn rg">Регистрация</button>
                     <button class="btn lg">Войти</button>
@@ -158,17 +158,19 @@
 <!-- START PROMO -->
 <div class="promo">
     <div class="conteiner">
-        <h2 class="promo-text">
-            Поднимите инфраструктуру на новый уровень с помощью Балансировщика нагрузки
-        </h2>
-        <div class="balancer">
-            <img src="images/Security.svg" alt="lock">
-            <h3 class="balancer-text">
-                Балансировщик нагрузки
-            </h3>
-            <p class="balancer-price">
-                $3.24/Месяц
-            </p>
+        <div class="promo-s">
+            <h2 class="promo-text">
+                Поднимите инфраструктуру на новый уровень с помощью Балансировщика нагрузки
+            </h2>
+            <div class="balancer">
+                <img class="balancer-img" src="images/Security.svg" alt="lock">
+                <h3 class="balancer-text">
+                    Балансировщик нагрузки
+                </h3>
+                <p class="balancer-price">
+                    $3.24/Месяц
+                </p>
+            </div>
         </div>
     </div>
 </div>
@@ -176,17 +178,16 @@
 <!-- START WORLD MAP -->
 <div class="map">
     <div class="conteiner">
-        <h2>
-            Cерверы по всему миру
-        </h2>
-        <h3>
-            Выбирайте удобное вам расположения сервера и уменьшайте задержки ваших проектов
-        </h3>
-        <div class="world-map">
-            <img src="images/world-map.png" alt="map">
-            <p>
-                Польша
-            </p>
+        <div class="map-content">
+            <h2 class="map-content__text">
+                Cерверы по всему миру
+            </h2>
+            <h3 class="map-content__text">
+                Выбирайте удобное вам расположения сервера и уменьшайте задержки ваших проектов
+            </h3>
+            <div class="world-map">
+                <img src="images/world-map.png" alt="map">
+            </div>
         </div>
     </div>
 </div>
@@ -274,60 +275,63 @@
 <!-- START FOOTER -->
 <footer>
     <div class="conteiner">
-        <ul>
-            <li>
-                <a href="index.html">
-                    <img src="images/Cloud.svg" alt="logo">
-                    <p>Limial</p>
-                </a>
-            </li>
-            <li>
-                <p>
-                    Надёжный хостинг для ваших любимых проектов.
-                </p>
-            </li>
-            <li>
-                <a href="mailto:sales@limial.com">sales@limial.com</a>
-            </li>
-            <li>
-                <a href="tel:+380665767991">+ 38(066)576-7991</a>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <p>
-                    Тех. Поддержка
-                </p>
-            </li>
-            <li>
-                <a href="#">Поддержка</a>
-            </li>
-            <li>
-                <a href="#">База знаний</a>
-            </li>
-            <li>
-                <a href="#">Сообщить о жалобе (abuse@limial.com)</a>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <p>
-                    Компания
-                </p>
-            </li>
-            <li>
-                <a href="#">О нас</a>
-            </li>
-            <li>
-                <a href="#">Контакты</a>
-            </li>
-            <li>
-                <a href="#">Документы</a>
-            </li>
-            <li>
-                <a href="#">Способы оплаты</a>
-            </li>
-        </ul>
+        <div class="footer-list">
+            <ul class="footer-main-info">
+                <li class="logo">
+                    <a class="logo" href="index.html">
+                        <img src="images/Cloud.svg" alt="logo">
+                        <p>Limial</p>
+                    </a>
+                </li>
+                <li>
+                    <p>
+                        Надёжный хостинг для ваших любимых проектов.
+                    </p>
+                </li>
+                <li>
+                    <a href="mailto:sales@limial.com">sales@limial.com</a>
+                </li>
+                <li>
+                    <a href="tel:+380665767991">+ 38(066)576-7991</a>
+                </li>
+            </ul>
+            <ul class="footer-help">
+                <li>
+                    <p>
+                        Тех. Поддержка
+                    </p>
+                </li>
+                <li>
+                    <a href="#">Поддержка</a>
+                </li>
+                <li>
+                    <a href="#">База знаний</a>
+                </li>
+                <li>
+                    <a href="#">Сообщить о жалобе (abuse@limial.com)</a>
+                </li>
+            </ul>
+            <ul class="footer-company">
+                <li>
+                    <p>
+                        Компания
+                    </p>
+                </li>
+                <li>
+                    <a href="#">О нас</a>
+                </li>
+                <li>
+                    <a href="#">Контакты</a>
+                </li>
+                <li>
+                    <a href="#">Документы</a>
+                </li>
+                <li>
+                    <a href="#">Способы оплаты</a>
+                </li>
+            </ul>
+        </div>
+        
     </div>
 </footer>
 <!-- END FOOTER -->
