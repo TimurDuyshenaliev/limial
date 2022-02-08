@@ -206,8 +206,80 @@ header{
     margin-bottom: 150px;
 }
 // ----------- QA ---------- //
-
-
+.question{
+    background-image: url('/images/main_background2.png');
+    background-position: center;
+    background-size: cover;
+}
+.question-content-text{
+    text-align: center;
+    padding-top: 63px;
+    margin-bottom: 56px;
+}
+.questiouns {
+    padding-bottom: 125px;
+}
+/* скрываем чекбоксы и блоки с содержанием */
+.hide,
+.hide + label ~ div {
+    display: none;
+}
+.hide + label{
+    display: inline-flex;
+    justify-content: space-between;
+    color: #2770EC;
+    cursor: pointer;
+    background: #FFFFFF;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 25px;
+    width: 100%;
+}
+/* вид текста label */
+.hide + label > p {
+    font-size: 1.75rem;
+    line-height: 1.28;
+    font-weight: 600;
+    
+}
+/* вид текста label при активном переключателе */
+.hide:checked + label {
+    color: #2770EC;
+}
+/* когда чекбокс активен показываем блоки с содержанием  */
+.hide:checked + label + div {
+    display: block; 
+    width: 100%;
+    background: #efefef;
+    background: #FFFFFF;
+    font-size: 1.75rem;
+    line-height: 1.28;
+    font-weight: 600;
+    color: #2770EC;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    /* чуточку анимации при появлении */
+     -webkit-animation:fade ease-in 0.5s; 
+     -moz-animation:fade ease-in 0.5s;
+     animation:fade ease-in 0.5s; 
+}
+/* анимация при появлении скрытых блоков */
+@-moz-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@-webkit-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }   
+}
 // ----------- FOOTER ---------- //
 footer{
     background-image: url('/images/main_background.jpeg');
@@ -223,10 +295,15 @@ footer{
     margin-top: 75px;
     margin-bottom: 85px;
 }
+.footer-list > ul > li > .slogan{
+    margin-top:0 ;
+    margin-bottom: 20px;
+}
 .footer-list > ul > li > p{
     font-weight: 700;
-    margin-top: 10px;
+    margin-top: 25px;
 }
+
 .footer-list > ul > li > a{
     text-decoration: none;
     color: #FFFFFF;
