@@ -3,6 +3,9 @@ body {
     font-size: 10px;
     font-family: 'Titillium Web', sans-serif;
 }
+img{
+    max-width: 100%;
+}
 .conteiner{
     width: 1160px;
     margin-left: auto;
@@ -47,4 +50,16 @@ body {
     color: #fff;
     border: 1px solid white;
     transform: translateY(-7px);
+}
+@media screen and(max-width: 450px) {
+    .conteiner{
+        width: 340px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    html,
+    body {
+    font-size: 5px;
+    font-family: 'Titillium Web', sans-serif;
+}
 }

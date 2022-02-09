@@ -229,8 +229,8 @@ header{
 // ----------- QA ---------- //
 .question{
     background-image: url('/images/main_background2.png');
-    background-position: center;
-    background-size: cover;
+    background-position: absolute;
+    background-size: 100%;
 }
 .question-content-text{
     text-align: center;
