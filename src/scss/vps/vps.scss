@@ -1,0 +1,116 @@
+// ----------- HERO ---------- //
+.hero{
+    height: 100vh;
+    background-image: url("/images/main_background.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+}
+.header--nav{
+    font-size: 1.4rem;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    padding-top: 30px;
+}
+.header-list{
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+.top--list__item{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.header-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.rg{
+    height: 35px;
+    background-color:rgba(0,0,0,0);
+    color: white;
+    margin-right: 10px;
+    border: 1px solid white;
+    transform: translateY(13px);
+}
+.rg:hover{
+    background-color: white;
+    color: #1B56C5;
+    transform: translateY(13px);
+}
+.lg{
+    height: 35px;
+    width: 100px;
+    color: #1B56C5;
+    transform: translateY(13px);
+}
+.line{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    
+}
+.main{
+    display:inline-flex;
+    margin-top: 85px;
+}
+.text__h1{
+    font-weight: bold;
+    font-size: 3.5rem;
+    line-height: 1.35;
+    margin-bottom: 20px;
+    color: white;
+    padding-top: 30px;
+}
+.text__h2{
+    font-weight: normal;
+    font-size: 2.25rem;
+    line-height: 1.35;
+    margin-bottom: 40px;
+    color: white;
+}
+.more {
+    width: 180px;
+    color: #1B56C5;
+}
+.main__img > img{
+    width: 646px;
+}
+// ----------- OPTIONS ---------- //
+.options{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 110px;
+}
+.options__h2{
+    font-weight: 400;
+}
+.list-of-options{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.list-of-options__item{
+    width: 255px;
+    height: 200px;
+    text-align: center;
+    padding-top: 30px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+.list-of-options__content{
+    padding-top: 20px;
+}
+.list-of-options__content__item{
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+.options-img{
+    width: 70px;
+}
