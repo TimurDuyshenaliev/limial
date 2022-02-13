@@ -1,20 +1,5 @@
-h2{
-    font-weight: bold;
-    font-size: 2.5rem;
-    line-height: 1.25;
-    padding-bottom: 15px;
-}
-h3{
-    font-weight: normal;
-    font-size: 2rem;
-    line-height: 1.5;
-    padding-bottom: 15px;
-}
-p{
-    font-weight: normal;
-    font-size: 1.5rem;
-    line-height: 1.5;
-}
+// ----------- HEADER ---------- //
+@import 'blocks/header.scss';
 // ----------- HERO ---------- //
 .hero{
     height: 100vh;
@@ -22,64 +7,17 @@ p{
     background-position: center;
     background-size: cover;
 }
-header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100px;
-}
-.header--nav{
-    font-size: 1.4rem;
-    line-height: 1.2;
-    margin-bottom: 15px;
-    padding-top: 30px;
-}
-.header-list{
-    display: flex;
-    justify-content: flex-end;
-    gap: 15px;
-}
-.top--list__item{
-    color: #FFFFFF;
-    text-decoration: none;
-}
-.header-bottom{
-    display: flex;
-    justify-content: space-between;
-}
-.rg{
-    height: 35px;
-    background-color:rgba(0,0,0,0);
-    color: white;
-    margin-right: 10px;
-    border: 1px solid white;
-    transform: translateY(13px);
-}
-.rg:hover{
-    background-color: white;
-    color: #1B56C5;
-    transform: translateY(13px);
-}
-.lg{
-    height: 35px;
-    width: 100px;
-    color: #1B56C5;
-    transform: translateY(13px);
-}
-.line{
-    width: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.25);
-    
-}
 .main{
     display:inline-flex;
     margin-top: 85px;
+    justify-content: space-between;
+    
 }
 .text__h1{
     font-weight: bold;
-    font-size: 3.5rem;
+    font-size: 3.8rem;
     line-height: 1.35;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     color: white;
     padding-top: 30px;
 }
@@ -95,7 +33,7 @@ header{
     color: #1B56C5;
 }
 .main__img > img{
-    width: 646px;
+    width: 642px;
 }
 // ----------- OPTIONS ---------- //
 .options{
@@ -124,9 +62,13 @@ header{
 .list-of-options__content{
     padding-top: 20px;
 }
+.list-of-options__content > p{
+    font-size: 1.6rem;
+}
 .list-of-options__content__item{
     padding-bottom: 10px;
     font-weight: 700;
+    font-size: 2rem;
 }
 .options-img{
     width: 70px;
@@ -226,109 +168,7 @@ header{
     margin-left: auto;
     margin-bottom: 150px;
 }
-// ----------- QA ---------- //
-.question{
-    background-image: url('/images/main_background2.png');
-    background-position: absolute;
-    background-size: 100%;
-}
-.question-content-text{
-    text-align: center;
-    padding-top: 63px;
-}
-.questiouns {
-    padding-bottom: 125px;
-}
-/* скрываем чекбоксы и блоки с содержанием */
-.hide,
-.hide + label ~ div {
-    display: none;
-}
-.hide + label{
-    display: inline-flex;
-    justify-content: space-between;
-    color: #2770EC;
-    cursor: pointer;
-    background: #FFFFFF;
-    border: 2px solid rgba(0, 0, 0, 0.3);
-    border-radius: 5px;
-    padding: 15px;
-    margin-top: 30px;
-    width: 100%;
-}
-/* вид текста label */
-.hide + label > p {
-    font-size: 1.75rem;
-    line-height: 1.28;
-    font-weight: 600;
-    
-}
-/* вид текста label при активном переключателе */
-.hide:checked + label {
-    color: #2770EC;
-    border-bottom: 0;
-    border-radius: 5px 5px 0 0;
-
-}
-/* когда чекбокс активен показываем блоки с содержанием  */
-.hide:checked + label + div {
-    display: block; 
-    width: 100%;
-    background: #efefef;
-    background: #FFFFFF;
-    font-size: 1.75rem;
-    line-height: 1.28;
-    font-weight: 500;
-    color: #2770EC;
-    border: 2px solid rgba(0, 0, 0, 0.3);
-    border-top: 0;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 0 0 5px 5px;
-    padding: 15px;
-    margin-bottom: 20px;
-    animation: anim 0.6s ease-in-out forwards;
-}
-/* анимация при появлении скрытых блоков */
-@keyframes anim {
-    0% {
-      opacity: 0;
-      transform: rotateX(-10deg);
-    }
-    100% {
-      opacity: 1;
-      transform: rotateX(0);
-    }
-  }
+// ----------- QUESTIONS ---------- //
+@import 'blocks/questions.scss';
 // ----------- FOOTER ---------- //
-footer{
-    background-image: url('/images/main_background.jpeg');
-    background-position: center;
-    background-size: cover;
-    color: #FFFFFF;
-}
-.footer-list{
-    display: inline-flex;
-    gap: 180px;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-top: 75px;
-    margin-bottom: 85px;
-}
-.footer-list > ul > li > .slogan{
-    margin-top:0 ;
-    margin-bottom: 20px;
-}
-.footer-list > ul > li > p{
-    font-weight: 700;
-    margin-top: 25px;
-}
-
-.footer-list > ul > li > a{
-    text-decoration: none;
-    color: #FFFFFF;
-    font-weight: 400;
-    font-size: 1.4rem;
-    line-height: 2.25;
-
-}
-
+@import 'blocks/footer.scss';

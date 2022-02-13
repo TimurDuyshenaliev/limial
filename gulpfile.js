@@ -5,6 +5,7 @@ const browserSync = require('browser-sync').create();
 const browserTask = () => browserSync.init({
     server: {
         baseDir: './src'
+
     }
 })
 

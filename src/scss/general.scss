@@ -4,14 +4,12 @@ body {
     // font-family: 'Titillium Web', sans-serif;
     font-family: 'Open Sans', sans-serif;
 }
-img{
-    max-width: 100%;
-}
 .conteiner{
     width: 1160px;
     margin-left: auto;
     margin-right: auto;
 }
+// LOGO
 .logo{
     display: inline-flex;
     align-items: center;
@@ -30,6 +28,7 @@ img{
     color: white;
     text-decoration: none;
 }
+// BUTTONS
 .btn {
     width: 140px;
     height: 45px;
@@ -42,7 +41,7 @@ img{
     border: none;
     border-radius: 5px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease 0s;
+    transition: all 0.6s ease 0s;
     cursor: pointer;
 }  
 .btn:hover {
@@ -50,8 +49,9 @@ img{
         box-shadow: 0px 15px 20px rgba(79, 118, 245, 0.73);
     color: #fff;
     border: 1px solid white;
-    transform: translateY(-7px);
+    // transform: translateY(-1px);
 }
+// ADAPTIVE
 @media screen and(max-width: 450px) {
     .conteiner{
         width: 340px;
@@ -63,4 +63,22 @@ img{
     font-size: 5px;
     font-family: 'Titillium Web', sans-serif;
 }
+}
+// text-size
+h2{
+    font-weight: bold;
+    font-size: 3.2rem;
+    line-height: 1.25;
+    padding-bottom: 15px;
+}
+h3{
+    font-weight: normal;
+    font-size: 2.4rem;
+    line-height: 1.5;
+    padding-bottom: 15px;
+}
+p{
+    font-weight: normal;
+    font-size: 1.8rem;
+    line-height: 1.5;
 }
