@@ -1,0 +1,87 @@
+// ----------- HERO ---------- //
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #ffffff;
+}
+.main__dedicated-text{
+    width: 55%;
+}
+.main__dedicated-text > h2{
+    margin-bottom: 35px;
+}
+.dedicated-text__p >p{
+    margin-bottom: 20px;
+    text-align: justify;
+}
+.main__benefits{
+    width: 35%;
+}
+.main__benefits > h2{
+    font-size: 3.2rem;
+    font-weight: 500;
+    margin-bottom: 35px;
+}
+.benefits__list{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.benefits__list__item{
+    display: inline-flex;
+    align-items: center;
+}
+.benefits__list__item > p{
+    margin-left: 30px;
+    font-size: 2.4rem;
+} 
+.list__item__img{
+    background-color: #ffffff;
+    border-radius: 5px ;
+    padding: 15px;
+}
+// ----------- RESULT ---------- //
+.your-server{
+    background-image: url("/images/vps-background.jpeg");
+    padding-bottom: 50px;
+}
+
+
+
+
+.result-h3{grid-area: h3;}
+.result-specs1{grid-area: specs1;}
+.result-specs2{grid-area: specs2;}
+.result-price{grid-area: price;}
+.result{
+    display: grid;
+    grid-template-areas:'h3 h3 price'
+                        'specs1 specs2 price'
+                        'specs1 specs2 price';;
+    align-items: center;
+    background: linear-gradient(89.85deg, #FFFFFF 0.11%, #F4F4F4 99.87%);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 35px;
+}
+.result-price{
+    display: grid;
+    justify-content: center;
+    text-align: end;
+}
+.result-price-1{
+    font-size: 4.3rem;
+    line-height: 1.5;
+    font-weight: 500;
+}
+.result-btn{
+    width: 100%;
+    background-color: #1A49C0;
+    color: #ffffff;
+}
+.result-btn:hover{
+    color: #1A49C0;
+    border: 1px solid#1A49C0;
+    background-color: #ffffff;
+}
