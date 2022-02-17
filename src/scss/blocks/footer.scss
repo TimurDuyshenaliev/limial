@@ -1,7 +1,7 @@
 // ----------- FOOTER ---------- //
 footer{
-    background-image: url('/images/main_background.jpeg');
-    background-position: center;
+    background-image: url('/images/wave-footer.png'),url('/images/vps-background.jpeg');
+    background-position: bottom ,center;
     background-size: cover;
     color: #FFFFFF;
 }
@@ -13,6 +13,11 @@ footer{
     margin-top: 75px;
     margin-bottom: 85px;
     width: 100%;
+}
+.footer-main-info__contacts{
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 .social-media{
     display: flex;
@@ -34,11 +39,14 @@ footer{
     font-weight: 700;
     margin-top: 25px;
 }
+.footer-list > ul > li{
+    margin-bottom: 15px;
+}
 
 .footer-list > ul > li > a{
     text-decoration: none;
     color: #FFFFFF;
     font-weight: 400;
     font-size: 1.4rem;
-    line-height: 2.25;
+    line-height: 1.25;
 }

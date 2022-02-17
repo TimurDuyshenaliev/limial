@@ -3,8 +3,8 @@
 // ----------- HERO ---------- //
 .hero{
     height: 100vh;
-    background-image: url("/images/main_background.jpeg");
-    background-position: center;
+    background-image: url("/images/wave-1.png"), url("/images/main_background.jpeg");
+    background-position: top;
     background-size: cover;
 }
 .main{

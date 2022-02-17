@@ -1,16 +1,16 @@
 // ----------- HERO ---------- //
-.hero{
+.hero2{
     background-image: url("/images/vps-background.jpeg");
+    height: 100vh;
 }
 .main--list__item{
     color: #ffffff;
-    
 }
 // ----------- PLANS ---------- //
 .plans{
     text-align: center;
     padding-top: 30px;
-    background-image: url("/images/vps-background.jpeg");
+    background-image: url('/images/wave-3.png'),url("/images/vps-background.jpeg");
     background-size: 100% 60%;
     background-repeat: no-repeat;
 }
@@ -45,7 +45,19 @@
 .plans-price1{
     font-size: 5.5rem;
     line-height: 1;
+    font-weight: 700;
     font-size: bold;
+}
+.btn-plans{
+    background-color: #153CB1;
+    color:#FFFFFF;
+    border: 2px solid #FFFFFF;
+    font-size: 1.4rem;
+}
+.btn-plans:hover{
+    background-color: #FFFFFF;
+    color:#153CB1;
+    border: 2px solid #153CB1;
 }
 // ----------- BANNER ---------- //
 .banner-img{grid-area: img;}
