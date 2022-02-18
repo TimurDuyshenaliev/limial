@@ -1,14 +1,23 @@
 html,
 body {
     font-size: 10px;
-    // font-family: 'Titillium Web', sans-serif;
     font-family: 'Open Sans', sans-serif;
 }
 .conteiner{
-    width: 1160px;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
 }
+@media (max-width: 768px) {
+    .conteiner{
+        width: 80%;
+    }
+}
+@media (max-width: 425px) {
+    .conteiner{
+        width: 80%;
+    }
+}  
 // LOGO
 .logo{
     display: inline-flex;
@@ -50,19 +59,6 @@ body {
     color: #fff;
     border: 1px solid white;
     // transform: translateY(-1px);
-}
-// ADAPTIVE
-@media screen and(max-width: 450px) {
-    .conteiner{
-        width: 340px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    html,
-    body {
-    font-size: 5px;
-    font-family: 'Titillium Web', sans-serif;
-}
 }
 // text-size
 h2{
