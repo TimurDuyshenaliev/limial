@@ -992,7 +992,8 @@ s
   background: linear-gradient(89.85deg, #FFFFFF 0.11%, #F4F4F4 99.87%);
   border-radius: 12px;
   padding: 20px;
-  margin-bottom: 35px; }
+  margin-bottom: 35px;
+  width: 100%; }
 
 .result-price {
   display: grid;
