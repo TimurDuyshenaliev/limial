@@ -102,226 +102,295 @@
         <h2 class="your-server__h2">
             Выбери свой сервер
         </h2>
-        <div class="your-server__result-filter">
-            <ul class="result-filter__list">
-                <li class="result-filter__list__item">
-                    <details class="result-filter-price">
-                        <summary>Цена</summary>
-                        <div class="filter-range">
-                            <div class="filter-range__price">
-                                <p class="filter-range__price-min">$66.75</p>
-                                <p class="filter-range__price-max">$950</p>
-                            </div>
-                            <input type="range" value="905" min="66.75" max="950">
-                        </div>
-                    </details>
-                </li>
-                <li class="result-filter__list__item">
-                    <details class="result-filter-cpu">
-                        <summary>Процессор</summary>
-                        <div class="result-filter-cpu__brand">
-                            <p>Бренд</p>
-                            <div class="cpu-brand__amd">
-                                <input type="checkbox" name="AMD" id="#">
-                                <label for="#">AMD</label>
-                            </div>
-                            <div class="cpu-brand__intel">
-                                <input type="checkbox" name="Intel" id="#">
-                                <label for="#">Intel</label>
-                            </div>
-                        </div>
-                        <div class="result-filter-cpu__value">
-                            <p>Количество процессоров</p>
-                            <div class="filter-range">
-                                <div class="filter-range__value">
-                                    <p class="filter-range__value-min">1 CPU</p>
-                                    <p class="filter-range__value-max">2 CPU</p>
+        <div class="your-server__content">
+            <div class="your-server__result-filter">
+                <form>
+                    <ul class="result-filter__list">
+                        <li class="result-filter__list__item">
+                            <details class="result-filter-price">
+                                <summary>Цена</summary>
+                                <div class="filter-range">
+                                    <div class="filter-range__price">
+                                        <p class="filter-range__price-min">$66.75</p>
+                                        <p class="filter-range__price-max">$950</p>
+                                    </div>
+                                    <input type="range" value="905" min="66.75" max="950">
                                 </div>
-                                <input type="range" value="2" min="1" max="2">
-                            </div>
-                        </div>
-                        <div class="result-filter-cpu__core">
-                            <p>Ядра / потоки</p>
-                            <div class="filter-range">
-                                <div class="filter-range__core">
-                                    <p class="filter-range__core-min">4c / 8t</p>
-                                    <p class="filter-range__core-max">32c / 64t</p>
+                            </details>
+                        </li>
+                        <li class="result-filter__list__item">
+                            <details class="result-filter-cpu">
+                                <summary>Процессор</summary>
+                                <div class="result-filter-cpu__brand">
+                                    <p>Бренд</p>
+                                    <div class="cpu-brand__amd">
+                                        <input type="checkbox" name="AMD" id="#">
+                                        <label for="#">AMD</label>
+                                    </div>
+                                    <div class="cpu-brand__intel">
+                                        <input type="checkbox" name="Intel" id="#">
+                                        <label for="#">Intel</label>
+                                    </div>
                                 </div>
-                                <input type="range" value="5" min="1" max="5">
-                            </div>
-                        </div>
-                        <div class="result-filter-cpu__ghz">
-                            <p>Частота ядра</p>
-                            <div class="filter-range">
-                                <div class="filter-range__ghz">
-                                    <p class="filter-range__ghz-min">2.1 Ghz</p>
-                                    <p class="filter-range__ghz-max">4.2 Ghz</p>
+                                <div class="result-filter-cpu__value">
+                                    <p>Количество процессоров</p>
+                                    <div class="filter-range">
+                                        <div class="filter-range__value">
+                                            <p class="filter-range__value-min">1 CPU</p>
+                                            <p class="filter-range__value-max">2 CPU</p>
+                                        </div>
+                                        <input type="range" value="2" min="1" max="2">
+                                    </div>
                                 </div>
-                                <input type="range" value="4" min="1" max="4">
-                            </div>
-                        </div>
-                    </details>
-                </li>
-                <li class="result-filter-list__item">
-                    <details class="result-filter-memory">
-                        <summary>Память</summary>
-                        <div class="filter-range">
-                            <div class="filter-range__memory">
-                                <p class="filter-range__memory-min">16 GB</p>
-                                <p class="filter-range__memory-max">2 TB</p>
-                            </div>
-                            <input type="range" value="32" min="16" max="32">
-                        </div>
-                    </details>
-                </li>
-                <li class="result-filter-list__item">
-                    <details class="result-filter-storage">
-                        <summary>Хранилище</summary>
-                        <div class="result-filter-storage__type">
-                            <div class="storage__type-NVMe">
-                                <input type="checkbox" name="nvme" id="#">
-                                <label for="#">NVMe</label>
-                            </div>
-                            <div class="storage__type-sas">
-                                <input type="checkbox" name="SAS" id="#">
-                                <label for="#">SAS</label>
-                            </div>
-                            <div class="storage__type-sata">
-                                <input type="checkbox" name="SATA" id="#">
-                                <label for="#">SATA</label>
-                            </div>
-                    </details>
-                </li>
-                <li class="result-filter-list__item">
-                    <details class="result-filter-net">
-                        <summary>Сеть</summary>
-                        <div class="filter-range">
-                            <div class="filter-range__net-public">
-                                <p class="filter-range__net-public-min">100 Mbps</p>
-                                <p class="filter-range__net-public-max">4 Gbps</p>
-                            </div>
-                            <input type="range" value="10000" min="1000" max="10000" id="net-public">
-                            <label for="net-public">Публичная сеть</label>
-                        </div>
-                        <div class="filter-range">
-                            <div class="filter-range__net-private">
-                                <p class="filter-range__net-private-min">0 Mbps</p>
-                                <p class="filter-range__net-private-max">50 Gbps</p>
-                            </div>
-                            <input type="range" value="50" min="1" max="50" id="net-private">
-                            <label for="net-private">Публичная сеть</label>
-                        </div>
-                    </details>
-                </li>
-                <li class="result-filter-list__item">
-                    <details class="result-filter-location">
-                        <summary>Локация</summary>
-                        <div class="filter-location">
-                            <div class="filter-location-fr">
-                                <input type="checkbox" name="fr" id="#">
-                                <label for="#">Франция</label>
-                            </div>
-                            <div class="filter-location-ca">
-                                <input type="checkbox" name="can" id="#">
-                                <label for="#">Канада</label>
-                            </div>
-                            <div class="filter-location-us">
-                                <input type="checkbox" name="us" id="#">
-                                <label for="#">США</label>
-                            </div>
-                            <div class="filter-location-av">
-                                <input type="checkbox" name="av" id="#">
-                                <label for="#">Австралия</label>
-                            </div>
-                            <div class="filter-location-gr">
-                                <input type="checkbox" name="gr" id="#">
-                                <label for="#">Германия</label>
-                            </div>
-                            <div class="filter-location-pl">
-                                <input type="checkbox" name="pl" id="#">
-                                <label for="#">Польша</label>
-                            </div>
-                            <div class="filter-location-gb">
-                                <input type="checkbox" name="gb" id="#">
-                                <label for="#">Великобритания</label>
-                            </div>
-                        </div>
-                    </details>
-                </li>
-            </ul>
-            <div class="your-server__result-filter__reset">
-                <input type="button" value="Сбрость все фильтры ➔">
+                                <div class="result-filter-cpu__core">
+                                    <p>Ядра / потоки</p>
+                                    <div class="filter-range">
+                                        <div class="filter-range__core">
+                                            <p class="filter-range__core-min">4c / 8t</p>
+                                            <p class="filter-range__core-max">32c / 64t</p>
+                                        </div>
+                                        <input type="range" value="5" min="1" max="5">
+                                    </div>
+                                </div>
+                                <div class="result-filter-cpu__ghz">
+                                    <p>Частота ядра</p>
+                                    <div class="filter-range">
+                                        <div class="filter-range__ghz">
+                                            <p class="filter-range__ghz-min">2.1 Ghz</p>
+                                            <p class="filter-range__ghz-max">4.2 Ghz</p>
+                                        </div>
+                                        <input type="range" value="4" min="1" max="4">
+                                    </div>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="result-filter-list__item">
+                            <details class="result-filter-memory">
+                                <summary>Память</summary>
+                                <div class="filter-range">
+                                    <div class="filter-range__memory">
+                                        <p class="filter-range__memory-min">16 GB</p>
+                                        <p class="filter-range__memory-max">2 TB</p>
+                                    </div>
+                                    <input type="range" value="32" min="16" max="32">
+                                </div>
+                            </details>
+                        </li>
+                        <li class="result-filter-list__item">
+                            <details class="result-filter-storage">
+                                <summary>Хранилище</summary>
+                                <div class="result-filter-storage__type">
+                                    <div class="storage__type-NVMe">
+                                        <input type="checkbox" name="nvme" id="#">
+                                        <label for="#">NVMe</label>
+                                    </div>
+                                    <div class="storage__type-sas">
+                                        <input type="checkbox" name="SAS" id="#">
+                                        <label for="#">SAS</label>
+                                    </div>
+                                    <div class="storage__type-sata">
+                                        <input type="checkbox" name="SATA" id="#">
+                                        <label for="#">SATA</label>
+                                    </div>
+                            </details>
+                        </li>
+                        <li class="result-filter-list__item">
+                            <details class="result-filter-net">
+                                <summary>Сеть</summary>
+                                <div class="filter-range">
+                                    <div class="filter-range__net-public">
+                                        <p class="filter-range__net-public-min">100 Mbps</p>
+                                        <p class="filter-range__net-public-max">4 Gbps</p>
+                                    </div>
+                                    <input type="range" value="10000" min="1000" max="10000" id="net-public">
+                                    <label class="net" for="net-public">Публичная сеть</label>
+                                </div>
+                                <div class="filter-range">
+                                    <div class="filter-range__net-private">
+                                        <p class="filter-range__net-private-min">0 Mbps</p>
+                                        <p class="filter-range__net-private-max">50 Gbps</p>
+                                    </div>
+                                    <input type="range" value="50" min="1" max="50" id="net-private">
+                                    <label class="net" for="net-private">Публичная сеть</label>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="result-filter-list__item">
+                            <details class="result-filter-location">
+                                <summary>Локация</summary>
+                                <div class="filter-location">
+                                    <div class="filter-location-fr">
+                                        <input type="checkbox" name="fr" id="#">
+                                        <label for="#">Франция</label>
+                                    </div>
+                                    <div class="filter-location-ca">
+                                        <input type="checkbox" name="can" id="#">
+                                        <label for="#">Канада</label>
+                                    </div>
+                                    <div class="filter-location-us">
+                                        <input type="checkbox" name="us" id="#">
+                                        <label for="#">США</label>
+                                    </div>
+                                    <div class="filter-location-av">
+                                        <input type="checkbox" name="av" id="#">
+                                        <label for="#">Австралия</label>
+                                    </div>
+                                    <div class="filter-location-gr">
+                                        <input type="checkbox" name="gr" id="#">
+                                        <label for="#">Германия</label>
+                                    </div>
+                                    <div class="filter-location-pl">
+                                        <input type="checkbox" name="pl" id="#">
+                                        <label for="#">Польша</label>
+                                    </div>
+                                    <div class="filter-location-gb">
+                                        <input type="checkbox" name="gb" id="#">
+                                        <label for="#">Великобритания</label>
+                                    </div>
+                                </div>
+                            </details>
+                        </li>
+                    </ul>
+                    <input class="result-filter__reset" type="reset" value="Сбрость все фильтры ➔">
+                </form>
+                
             </div>
-        </div>
-        <div class="your-server__result-plans">
-            <ul>
-                <li>
-                    <div class="result">
-                        <h3 class="result-h3">
-                            GAME-32
-                        </h3>
-                        <div class="result-specs1">
-                            <p>Процессор: Intel i7-6700K - 4c/ 8 t - 4.2GHz</p>
-                            <p>Память: 32 GB DDR4</p>
-                            <p>Хранилище: 2 x 480 GB SSD + 1 x 4 TB HDD</p>
+            <div class="your-server__result-plans">
+                <ul>
+                    <li>
+                        <div class="result">
+                            <h3 class="result-h3">
+                                GAME-32
+                            </h3>
+                            <div class="result-specs1">
+                                <p>Процессор: Intel i7-6700K - 4c/ 8 t - 4.2GHz</p>
+                                <p>Память: 32 GB DDR4</p>
+                                <p>Хранилище: 2 x 480 GB SSD + 1 x 4 TB HDD</p>
+                            </div>
+                            <div class="result-specs2">
+                                <p>Публичная сеть: 250 Mbps</p>
+                                <p>Приватная сеть: -</p>
+                                <p>SLA: 99.90%</p>
+                            </div>
+                            <div class="result-price">
+                                <p class="result-price-1">$118.99</p>
+                                <p>/ Месяц</p>
+                                <button class="btn result-btn">ПОДРОБНЕЕ</button>
+                            </div>
                         </div>
-                        <div class="result-specs2">
-                            <p>Публичная сеть: 250 Mbps</p>
-                            <p>Приватная сеть: -</p>
-                            <p>SLA: 99.90%</p>
+                    </li>
+                    <li>
+                        <div class="result">
+                            <h3 class="result-h3">
+                                GAME-32
+                            </h3>
+                            <div class="result-specs1">
+                                <p>Процессор: Intel i7-6700K - 4c/ 8 t - 4.2GHz</p>
+                                <p>Память: 32 GB DDR4</p>
+                                <p>Хранилище: 2 x 480 GB SSD + 1 x 4 TB HDD</p>
+                            </div>
+                            <div class="result-specs2">
+                                <p>Публичная сеть: 250 Mbps</p>
+                                <p>Приватная сеть: -</p>
+                                <p>SLA: 99.90%</p>
+                            </div>
+                            <div class="result-price">
+                                <p class="result-price-1">$118.99</p>
+                                <p>/ Месяц</p>
+                                <button class="btn result-btn">ПОДРОБНЕЕ</button>
+                            </div>
                         </div>
-                        <div class="result-price">
-                            <p class="result-price-1">$118.99</p>
-                            <p>/ Месяц</p>
-                            <button class="btn result-btn">ПОДРОБНЕЕ</button>
+                    </li>
+                    <li>
+                        <div class="result">
+                            <h3 class="result-h3">
+                                GAME-32
+                            </h3>
+                            <div class="result-specs1">
+                                <p>Процессор: Intel i7-6700K - 4c/ 8 t - 4.2GHz</p>
+                                <p>Память: 32 GB DDR4</p>
+                                <p>Хранилище: 2 x 480 GB SSD + 1 x 4 TB HDD</p>
+                            </div>
+                            <div class="result-specs2">
+                                <p>Публичная сеть: 250 Mbps</p>
+                                <p>Приватная сеть: -</p>
+                                <p>SLA: 99.90%</p>
+                            </div>
+                            <div class="result-price">
+                                <p class="result-price-1">$118.99</p>
+                                <p>/ Месяц</p>
+                                <button class="btn result-btn">ПОДРОБНЕЕ</button>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="result">
-                        <h3 class="result-h3">
-                            GAME-32
-                        </h3>
-                        <div class="result-specs1">
-                            <p>Процессор: Intel i7-6700K - 4c/ 8 t - 4.2GHz</p>
-                            <p>Память: 32 GB DDR4</p>
-                            <p>Хранилище: 2 x 480 GB SSD + 1 x 4 TB HDD</p>
+                    </li>
+                    <li>
+                        <div class="result">
+                            <h3 class="result-h3">
+                                GAME-32
+                            </h3>
+                            <div class="result-specs1">
+                                <p>Процессор: Intel i7-6700K - 4c/ 8 t - 4.2GHz</p>
+                                <p>Память: 32 GB DDR4</p>
+                                <p>Хранилище: 2 x 480 GB SSD + 1 x 4 TB HDD</p>
+                            </div>
+                            <div class="result-specs2">
+                                <p>Публичная сеть: 250 Mbps</p>
+                                <p>Приватная сеть: -</p>
+                                <p>SLA: 99.90%</p>
+                            </div>
+                            <div class="result-price">
+                                <p class="result-price-1">$118.99</p>
+                                <p>/ Месяц</p>
+                                <button class="btn result-btn">ПОДРОБНЕЕ</button>
+                            </div>
                         </div>
-                        <div class="result-specs2">
-                            <p>Публичная сеть: 250 Mbps</p>
-                            <p>Приватная сеть: -</p>
-                            <p>SLA: 99.90%</p>
+                    </li>
+                    <li>
+                        <div class="result">
+                            <h3 class="result-h3">
+                                GAME-32
+                            </h3>
+                            <div class="result-specs1">
+                                <p>Процессор: Intel i7-6700K - 4c/ 8 t - 4.2GHz</p>
+                                <p>Память: 32 GB DDR4</p>
+                                <p>Хранилище: 2 x 480 GB SSD + 1 x 4 TB HDD</p>
+                            </div>
+                            <div class="result-specs2">
+                                <p>Публичная сеть: 250 Mbps</p>
+                                <p>Приватная сеть: -</p>
+                                <p>SLA: 99.90%</p>
+                            </div>
+                            <div class="result-price">
+                                <p class="result-price-1">$118.99</p>
+                                <p>/ Месяц</p>
+                                <button class="btn result-btn">ПОДРОБНЕЕ</button>
+                            </div>
                         </div>
-                        <div class="result-price">
-                            <p class="result-price-1">$118.99</p>
-                            <p>/ Месяц</p>
-                            <button class="btn result-btn">ПОДРОБНЕЕ</button>
+                    </li>
+                    <li>
+                        <div class="result">
+                            <h3 class="result-h3">
+                                GAME-32
+                            </h3>
+                            <div class="result-specs1">
+                                <p>Процессор: Intel i7-6700K - 4c/ 8 t - 4.2GHz</p>
+                                <p>Память: 32 GB DDR4</p>
+                                <p>Хранилище: 2 x 480 GB SSD + 1 x 4 TB HDD</p>
+                            </div>
+                            <div class="result-specs2">
+                                <p>Публичная сеть: 250 Mbps</p>
+                                <p>Приватная сеть: -</p>
+                                <p>SLA: 99.90%</p>
+                            </div>
+                            <div class="result-price">
+                                <p class="result-price-1">$118.99</p>
+                                <p>/ Месяц</p>
+                                <button class="btn result-btn">ПОДРОБНЕЕ</button>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="result">
-                        <h3 class="result-h3">
-                            GAME-32
-                        </h3>
-                        <div class="result-specs1">
-                            <p>Процессор: Intel i7-6700K - 4c/ 8 t - 4.2GHz</p>
-                            <p>Память: 32 GB DDR4</p>
-                            <p>Хранилище: 2 x 480 GB SSD + 1 x 4 TB HDD</p>
-                        </div>
-                        <div class="result-specs2">
-                            <p>Публичная сеть: 250 Mbps</p>
-                            <p>Приватная сеть: -</p>
-                            <p>SLA: 99.90%</p>
-                        </div>
-                        <div class="result-price">
-                            <p class="result-price-1">$118.99</p>
-                            <p>/ Месяц</p>
-                            <button class="btn result-btn">ПОДРОБНЕЕ</button>
-                        </div>
-                    </div>
-                </li>
-            </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </section>
