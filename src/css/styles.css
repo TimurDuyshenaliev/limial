@@ -518,7 +518,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; } }
+    flex-direction: column;
+    gap: 5px; } }
 
 .list-of-options__item {
   width: 255px;
