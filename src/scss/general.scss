@@ -13,11 +13,6 @@ body {
         width: 80%;
     }
 }
-@media (max-width: 425px) {
-    .conteiner{
-        width: 80%;
-    }
-}  
 // LOGO
 .logo{
     display: inline-flex;
@@ -77,4 +72,23 @@ p{
     font-weight: normal;
     font-size: 1.8rem;
     line-height: 1.5;
+}
+@media (max-width: 768px){
+    h2{
+        font-weight: bold;
+        font-size: 2.4rem;
+        line-height: 1.25;
+        padding-bottom: 15px;
+    }
+    h3{
+        font-weight: normal;
+        font-size: 1.8rem;
+        line-height: 1.5;
+        padding-bottom: 15px;
+    }
+    p{
+        font-weight: normal;
+        font-size: 1.4rem;
+        line-height: 1.5;
+    }
 }
