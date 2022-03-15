@@ -334,6 +334,9 @@ body {
   font-size: 10px;
   font-family: 'Open Sans', sans-serif; }
 
+a {
+  text-decoration: none; }
+
 .conteiner {
   width: 85%;
   margin-left: auto;
@@ -1210,3 +1213,53 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     grid-template-areas: 'h3 h3 ' 'specs1 specs2 ' 'specs1 specs2 ' 'price price'; }
   .result-h3 {
     text-align: center; } }
+
+p {
+  color: white; }
+
+.about__title {
+  color: #ffffff; }
+
+.about_h3 {
+  color: #ffffff; }
+
+.button_list__item > a {
+  color: #ffffff; }
+
+.about {
+  margin-top: 50px; }
+
+.about__list {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px; }
+
+.about__list__item1 {
+  width: 50%;
+  margin-right: 70px; }
+
+.list__item__button_list {
+  display: flex;
+  flex-direction: row; }
+
+.button_list__item {
+  border: 1px solid white;
+  border-radius: 5px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  font-size: 1.6rem;
+  font-weight: bold;
+  width: 280px;
+  height: 80px;
+  text-align: center;
+  padding-top: 20px;
+  margin-top: 15px;
+  margin-right: 30px; }
+
+.social_list__item {
+  margin-top: 20px; }
+
+.social_list__item > a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px; }
