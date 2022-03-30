@@ -1,5 +1,8 @@
 // ----------- HERO ---------- //
-p{
+.hero{
+    background-image: url("/images/main_background.jpeg");
+}
+.about_p{
     color: white;
 }
 .about__title{
@@ -48,4 +51,5 @@ p{
     flex-direction: row;
     align-items: center;
     gap: 15px;
+    color: #ffffff;
 }

@@ -332,7 +332,8 @@ textarea {
 html,
 body {
   font-size: 10px;
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  height: 100%; }
 
 a {
   text-decoration: none; }
@@ -1214,7 +1215,10 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   .result-h3 {
     text-align: center; } }
 
-p {
+.hero {
+  background-image: url("/images/main_background.jpeg"); }
+
+.about_p {
   color: white; }
 
 .about__title {
@@ -1262,4 +1266,5 @@ p {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 15px; }
+  gap: 15px;
+  color: #ffffff; }
